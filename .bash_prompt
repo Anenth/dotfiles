@@ -1,10 +1,7 @@
 # This prompt inspired by gf3, sindresorhus, alrra, and mathiasbynens.
 # but customized to me. <3
 
-default_username='paulirish'
-
-
-eval "$(thefuck --alias)"
+default_username='anenth'
 
 
 if [[ -n "$ZSH_VERSION" ]]; then  # quit now if in zsh

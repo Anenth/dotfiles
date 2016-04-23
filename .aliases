@@ -62,7 +62,7 @@ alias master="git checkout master"
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 # alias dig="dig +nocmd any +multiline +noall +answer"
 # wget sucks with certificates. Let's keep it simple.
-alias wget="curl -O"  
+alias wget="curl -O"
 
 # Recursively delete `.DS_Store` files
 alias cleanup_dsstore="find . -name '*.DS_Store' -type f -ls -delete"
@@ -91,3 +91,24 @@ alias emptytrash=" \
 alias brew_update="brew -v update; brew upgrade --force-bottle --cleanup; brew cleanup; brew cask cleanup; brew prune; brew doctor; npm-check -g -u"
 alias update_brew_npm_gem='brew_update; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update --no-rdoc --no-ri'
 
+
+alias sshp='ssh -i ~/Code/amazon/amazonkey.pem ubuntu@52.3.8.97'
+alias e="emacs"
+alias i="invoke"
+alias irs="wr && invoke rs"
+alias ig="wr && i grunt"
+alias w="workon"
+alias gw="gulp watch"
+alias zsh="vim ~/.zshrc && . ~/.zshrc"
+alias .zsh=". ~/.zshrc"
+
+alias ggpush-heroku="git push heroku master"
+alias gcrm="gco recruiterbox_main && ggpur"
+
+
+alias rb='cd ~/code/aplopio/recruiterbox'
+alias ic="wr && i celery.p &&  i celery.d"
+alias wr="rb && workon rbox"
+alias wj="cd ~/code/aplopio/job-distribution-service && workon rbox-jds"
+alias test-s="python manage.py test selenium_tests"
+alias gpr="hub pull-request"

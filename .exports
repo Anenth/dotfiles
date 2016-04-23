@@ -14,3 +14,12 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 # github.com/trapd00r/LS_COLORS
 command -v gdircolors >/dev/null 2>&1 || alias gdircolors="dircolors"
 eval "$(gdircolors -b ~/.dircolors)"
+
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages
+
+export PATH="$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/"
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/npm/bin/:/usr/local/lib/node_modules/
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+export WORKON_HOME=~/Envs
+VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python

@@ -116,11 +116,10 @@ shopt -s nocaseglob;
 shopt -s cdspell;
 
 
-
-
-
 # The next line updates PATH for the Google Cloud SDK.
-source '/Users/paulirish/google-cloud-sdk/path.bash.inc'
+source '/Users/Anenth/google-cloud-sdk/path.bash.inc'
 
-# The next line enables shell command completion for gcloud.
-source '/Users/paulirish/google-cloud-sdk/completion.bash.inc'
+# The next line enables bash completion for gcloud.
+source '/Users/Anenth/google-cloud-sdk/completion.bash.inc'
+
+source '/usr/local/bin/virtualenvwrapper.sh'
