@@ -54,10 +54,11 @@ source ~/code/antigen/antigen.zsh
 
 local b="antigen-bundle"
 
-antigen theme kolo
 
 # Don't load the oh-my-zsh's library. Takes too long. No need.
-	# antigen use oh-my-zsh
+antigen use oh-my-zsh
+
+antigen theme kolo
 
 # Guess what to install when running an unknown command.
 $b command-not-found
