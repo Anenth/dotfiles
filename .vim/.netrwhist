@@ -1,10 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/Users/Anenth/.antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh.git/plugins/common-aliases'
-let g:netrw_dirhist_2='/Users/Anenth/.antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh.git/plugins'
-let g:netrw_dirhist_3='/Users/Anenth/.antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh.git/plugins/atom'
-let g:netrw_dirhist_4='/Users/Anenth/.antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh.git/plugins'
-let g:netrw_dirhist_5='/Users/Anenth/.antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh.git/plugins/command-not-found'
-let g:netrw_dirhist_6='/Users/Anenth/.antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh.git/plugins/emoji'
-let g:netrw_dirhist_7='/Users/Anenth/.antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh.git/plugins'
-let g:netrw_dirhist_8='/Users/Anenth/.antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh.git/plugins/git-extras'
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/Anenth/Code/Aplopio/job-distribution-service'
+let g:netrw_dirhist_2='/private/etc'
+let g:netrw_dirhist_3='/Users/Anenth/Code/Aplopio/recruiterbox/node_modules/react-bootstrap-table'
+let g:netrw_dirhist_4='/Users/Anenth/Code/Aplopio/recruiterbox/node_modules/react-bootstrap-table/dist'
+let g:netrw_dirhist_5='/Users/Anenth/Code/watermark_dev'
+let g:netrw_dirhist_6='/Users/Anenth/Code/Aplopio/cyborg'

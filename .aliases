@@ -108,7 +108,7 @@ alias gcrm="gco recruiterbox_main && ggpur"
 
 alias rb='cd ~/code/aplopio/recruiterbox'
 alias ic="wr && i celery.p &&  i celery.d"
-alias wr="rb && workon rbox"
+alias wr="rb && workon r2"
 alias wj="cd ~/code/aplopio/job-distribution-service && workon rbox-jds"
 alias test-s="python manage.py test selenium_tests"
 alias gpr="hub pull-request"
