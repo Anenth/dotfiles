@@ -191,3 +191,5 @@
 	postBuffer = 1524288000
 [fetch]
 	prune = true
+[diff]
+	compactionHeuristic = true
