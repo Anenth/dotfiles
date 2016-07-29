@@ -1,6 +1,6 @@
 #!/bin/bash
 
-branches_to_die=$(git branch --no-color --merged origin/master | grep -v '^[\* ] master')
+branches_to_die=$(git branch --no-color --merged origin/master | grep -v '^[\* ] master recruiterbox-main')
 echo "Branches to be deleted:"
 echo $branches_to_die
 

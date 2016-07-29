@@ -82,7 +82,7 @@
   # Delete any branches that have been merged into master
   # See also: https://gist.github.com/robmiller/5133264
   delete-merged-branches = "!gcm && git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
-  delete-merged-branches-rbox = "git branch --merged origin/recruiterbox_main | grep -v 'recruiterbox_main' | xargs git branch -d"
+  delete-merged-branches-rbox = "!git branch --merged origin/recruiterbox_main | grep -v 'recruiterbox_main' | xargs -n 1 git branch -d"
 
 [core]
 	excludesfile = ~/.gitignore
@@ -99,7 +99,7 @@
 
 # so much color
 [color]
-	ui = always
+	ui = auto
 [color "diff"]
 	meta = yellow bold
 	commit = green bold

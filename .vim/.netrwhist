@@ -1,8 +1,8 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/Anenth/Code/Aplopio/job-distribution-service'
-let g:netrw_dirhist_2='/private/etc'
-let g:netrw_dirhist_3='/Users/Anenth/Code/Aplopio/recruiterbox/node_modules/react-bootstrap-table'
-let g:netrw_dirhist_4='/Users/Anenth/Code/Aplopio/recruiterbox/node_modules/react-bootstrap-table/dist'
-let g:netrw_dirhist_5='/Users/Anenth/Code/watermark_dev'
-let g:netrw_dirhist_6='/Users/Anenth/Code/Aplopio/cyborg'
+let g:netrw_dirhist_1='/Users/Anenth/Code/Aplopio/recruiterbox'
+let g:netrw_dirhist_2='/Users/Anenth/Code/Aplopio/recruiterbox/client-src'
+let g:netrw_dirhist_3='/Users/Anenth/Code/Aplopio/recruiterbox'
+let g:netrw_dirhist_4='/Users/Anenth/Code/Aplopio/recruiterbox/static'
+let g:netrw_dirhist_5='/Users/Anenth/Code/Aplopio/recruiterbox/static/css'
+let g:netrw_dirhist_6='/Users/Anenth/Downloads/web-crawler'
