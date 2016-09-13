@@ -102,6 +102,9 @@ $b git-extras
 $b rand-quote
 $b node
 
+$b zsh-navigation-tools
+$b gitfast
+
 # Tell antigen that you're done.
 #antigen apply
 

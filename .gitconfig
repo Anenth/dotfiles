@@ -83,6 +83,7 @@
   # See also: https://gist.github.com/robmiller/5133264
   delete-merged-branches = "!gcm && git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
   delete-merged-branches-rbox = "!git branch --merged origin/recruiterbox_main | grep -v 'recruiterbox_main' | xargs -n 1 git branch -d"
+	g = grep --break --heading --line-number
 
 [core]
 	excludesfile = ~/.gitignore
@@ -173,3 +174,6 @@
  	prompt = false
 [mergetool]
  	prompt = false
+[grep]
+	extendRegexp = true
+	lineNumber = true

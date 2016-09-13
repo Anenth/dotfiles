@@ -111,7 +111,9 @@ alias ic="wr && i celery.p &&  i celery.d"
 alias wr="rb && workon r2"
 alias wj="cd ~/code/aplopio/job-distribution-service && workon rbox-jds"
 alias test-s="python manage.py test selenium_tests"
-alias gpr="hub pull-request | xargs open "
+alias gpr="hub pull-request "
+
+alias git-alias="cat ~/.antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh.git/plugins/git/git.plugin.zsh"
 
 # Downloader
 alias dls='youtube-dl -f 140 -t '
