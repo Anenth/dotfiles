@@ -1,6 +1,6 @@
 [user]
-    name = Anenth
-    email = anenthvishnu@gmail.com
+	name = Anenth
+	email = anenthvishnu@gmail.com
 [alias]
 	sclone = clone --depth=1
 	df = diff --color --color-words --abbrev
@@ -83,10 +83,10 @@
   # See also: https://gist.github.com/robmiller/5133264
   delete-merged-branches = "!gcm && git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
   delete-merged-branches-rbox = "!git branch --merged origin/recruiterbox_main | grep -v 'recruiterbox_main' | xargs -n 1 git branch -d"
-	g = grep --break --heading --line-number
+  g = grep --break --heading --line-number
 
 [core]
-	excludesfile = ~/.gitignore
+	excludesfile = /Users/Anenth/.gitignore
 	attributesfile = ~/.gitattributes
 	autocrlf = false
 
@@ -177,3 +177,9 @@
 [grep]
 	extendRegexp = true
 	lineNumber = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

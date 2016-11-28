@@ -101,6 +101,7 @@ set wildmenu " Hitting TAB in command mode will show possible completions above 
 set wildmode=list:longest " Complete only until point of ambiguity
 set winminheight=0 " Allow splits to be reduced to a single line
 set wrapscan " Searches wrap around end of file
+set guifont=Source\ Code\ Pro\ for\ Powerline
 " }}}
 
 " }}}
@@ -631,21 +632,17 @@ Plug 'pangloss/vim-javascript'
 Plug 'rking/ag.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/syntastic'
-Plug 'slim-template/vim-slim', { 'for': 'slim' }
-Plug 'thoughtbot/vim-rspec'
 Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-haml'
 Plug 'tpope/vim-markdown',     { 'for': 'markdown' }
-Plug 'tpope/vim-rails'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'vim-ruby/vim-ruby'
-Plug 'vim-scripts/fish.vim',   { 'for': 'fish' }
 Plug 'vim-scripts/jade.vim',   { 'for': 'jade' }
 Plug 'wavded/vim-stylus',      { 'for': 'stylus' }
 Plug 'wlangstroth/vim-racket'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-notes'
+Plug 'terryma/vim-multiple-cursors'
 
 call plug#end()
 " }}}
