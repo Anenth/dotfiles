@@ -143,7 +143,6 @@
 	insteadOf = "github:"
 
 [url "git@gist.github.com:"]
-	insteadOf = "gst:"
 	pushInsteadOf = "gist:"
 	pushInsteadOf = "git://gist.github.com/"
 	

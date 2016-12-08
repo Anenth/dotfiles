@@ -2,4 +2,5 @@
 
 
 # protocol viewer
-cd $HOME/code/debugger-protocol-viewer && ./update-protocol-json.sh && git commit -am "bump protocol" && git pull && git push
+cd $HOME/code/pristine/debugger-protocol-viewer-pristine && git checkout gh-pages && ./update-protocol-json.sh && git commit -am "bump protocol"
+cd $HOME/code/pristine/debugger-protocol-viewer-pristine && git pull && git push
