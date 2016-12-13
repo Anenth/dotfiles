@@ -30,7 +30,8 @@ brew install homebrew/completions/brew-cask-completion
 brew install wget --with-iri
 
 # Install more recent versions of some OS X tools
-brew install vim --override-system-vi
+brew install vim --with-override-system-vi
+brew install homebrew/dupes/nano
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
