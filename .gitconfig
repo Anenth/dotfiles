@@ -124,8 +124,8 @@
 
 # git mergetool
 [merge]
-	tool = opendiff
-	# tool = Kaleidoscope
+        # tool = opendiff
+	tool = Kaleidoscope
 	# conflictstyle = diff3
 
 # rewrites of repo paths

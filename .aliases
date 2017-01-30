@@ -105,7 +105,7 @@ alias .zsh=". ~/.zshrc"
 
 alias ggpush-heroku="git push heroku master"
 alias gcrm="gco recruiterbox_main && ggpur"
-
+alias gmr="gm recruiterbox_main"
 
 alias rb='cd ~/code/aplopio/recruiterbox'
 alias ic="wr && i celery.p &&  i celery.d"
