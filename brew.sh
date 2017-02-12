@@ -36,6 +36,8 @@ brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
 
+# z hopping around folders
+brew install z
 
 # run this script when this file changes guy.
 brew install entr
@@ -70,6 +72,8 @@ brew install terminal-notifier
 
 brew install android-platform-tools
 brew install pidcat   # colored logcat guy
+
+brew install ncdu # find where your diskspace went
 
 brew install zsh
 
