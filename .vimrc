@@ -154,7 +154,7 @@ augroup general_config
   " }}}
 
   " Remap :W to :w {{{
-  command! W w
+  command! W write
   " }}}
 
   " Better mark jumping (line + col) {{{
