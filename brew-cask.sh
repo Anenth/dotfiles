@@ -63,6 +63,7 @@ brew cask install spotify
 brew tap caskroom/fonts 
 brew cask install font-fira-code
 
+
 # Not on cask but I want regardless.
 
 # File Multi Tool 5
