@@ -131,9 +131,8 @@
 
 # git mergetool
 [merge]
-        # tool = opendiff
-	tool = Kaleidoscope
-	# conflictstyle = diff3
+	tool = opendiff
+	renameLimit = 0
 
 # rewrites of repo paths
 [url "git@github.com:"]
@@ -163,6 +162,7 @@
 	rebase = true
 [rerere]
 	enabled = true
+	followTags = true
 
 # use separate file for username / github token / etc
 [include]
@@ -200,3 +200,5 @@
 	prune = true
 [diff]
 	compactionHeuristic = true
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
