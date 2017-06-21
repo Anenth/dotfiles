@@ -7,6 +7,7 @@
 	s = status
 	sclone = clone --depth=1
 	amend = commit --amend --all
+	hreset = reset --hard
 	co = checkout
 	df = diff --color --color-words --abbrev
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
@@ -89,6 +90,8 @@
   delete-merged-branches = "!gcm && git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
   delete-merged-branches-rbox = "!git branch --merged origin/recruiterbox_main | grep -v 'recruiterbox_main' | xargs -n 1 git branch -d"
   g = grep --break --heading --line-number
+	reup = rebase-update # depot_tools specific
+	fpush = push --force
 
 [core]
 	excludesfile = /Users/Anenth/.gitignore
