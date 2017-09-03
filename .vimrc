@@ -102,12 +102,19 @@ set wildmode=list:longest " Complete only until point of ambiguity
 set winminheight=0 " Allow splits to be reduced to a single line
 set wrapscan " Searches wrap around end of file
 set guifont=Source\ Code\ Pro\ for\ Powerline
+set showcmd
 " }}}
 
 " }}}
 
 
 " Configuration -------------------------------------------------------------
+highlight Cursor guifg=white guibg=black
+highlight iCursor guifg=white guibg=steelblue
+set guicursor=n-v-c:block-Cursor
+set guicursor+=i:ver100-iCursor
+set guicursor+=n-v-c:blinkon0
+set guicursor+=i:blinkwait10
 
 " FastEscape {{{
 " Speed up transition from modes
@@ -621,7 +628,6 @@ Plug 'joker1007/vim-ruby-heredoc-syntax'
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/vim-emoji'
 Plug 'junegunn/goyo.vim'
-Plug 'kchmck/vim-coffee-script'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'msanders/snipmate.vim'
@@ -643,6 +649,7 @@ Plug 'wlangstroth/vim-racket'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-notes'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'scrooloose/nerdtree'
 
 call plug#end()
 " }}}
