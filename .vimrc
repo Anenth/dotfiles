@@ -109,12 +109,6 @@ set showcmd
 
 
 " Configuration -------------------------------------------------------------
-highlight Cursor guifg=white guibg=black
-highlight iCursor guifg=white guibg=steelblue
-set guicursor=n-v-c:block-Cursor
-set guicursor+=i:ver100-iCursor
-set guicursor+=n-v-c:blinkon0
-set guicursor+=i:blinkwait10
 
 " FastEscape {{{
 " Speed up transition from modes
@@ -611,9 +605,15 @@ augroup syntastic_config
   let g:syntastic_error_symbol = '✗'
   let g:syntastic_warning_symbol = '⚠'
   let g:syntastic_ruby_checkers = ['mri', 'rubocop']
+  
+  " ELM
+  let g:syntastic_always_populate_loc_list = 1
+  let g:syntastic_auto_loc_list = 1
+  let g:elm_syntastic_show_warnings = 1
+  " END ELM
+
 augroup END
 " }}}
-
 
 " Plugins -------------------------------------------------------------
 
@@ -650,6 +650,7 @@ Plug 'xolox/vim-misc'
 Plug 'xolox/vim-notes'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'scrooloose/nerdtree'
+Plug 'elmcast/elm-vim'
 
 call plug#end()
 " }}}
