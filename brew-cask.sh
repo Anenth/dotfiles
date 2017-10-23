@@ -16,13 +16,25 @@ brew cask install dropbox
 brew cask install gyazo
 brew cask install 1password
 brew cask install rescuetime
+brew cask install wunderlist
+brew cask install cleanmymac
+brew cask install fantastical
+brew cask install slack
+brew cask install spark
+
 # brew cask install flux
 
 # dev
 brew cask install iterm2
+brew cask install hyper
 brew cask install sublime-text
+brew cask install visual-studio-code
+brew cask install pycharm
+brew cask install macvim
 brew cask install imagealpha
 brew cask install imageoptim
+
+brew cask install avocode
 
 # fun
 brew cask install limechat
@@ -42,6 +54,7 @@ brew cask install screenflow
 brew cask install vlc
 brew cask install gpgtools
 brew cask install licecap
+brew cask install tunnelblick
 # brew cask install utorrent
 
 brew cask install spotify
