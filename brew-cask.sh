@@ -21,6 +21,7 @@ brew cask install cleanmymac
 brew cask install fantastical
 brew cask install slack
 brew cask install spark
+brew cask install alfred
 
 # brew cask install flux
 
