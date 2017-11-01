@@ -24,3 +24,11 @@
 * `symlink-setup.sh`  - sets up symlinks for all dotfiles and vim config.
 * `.osx` - run on a fresh osx setup
 * `brew.sh` & `brew-cask.sh` - homebrew initialization
+
+
+### shell
+Install fish shell
+
+fisherman for fish shell plugin manager
+  curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
+

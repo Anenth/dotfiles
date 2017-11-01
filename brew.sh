@@ -62,6 +62,7 @@ brew install fzf
 brew install git
 brew install imagemagick --with-webp
 brew install node # This installs `npm` too using the recommended installation method
+brew install nvm
 brew install pv
 brew install rename
 brew install tree
@@ -76,6 +77,12 @@ brew install pidcat   # colored logcat guy
 brew install ncdu # find where your diskspace went
 
 brew install zsh
+brew install antigen
+
+# https://passingcuriosity.com/2013/dnsmasq-dev-osx/
+brew install dnsmasq
 
 # Remove outdated versions from the cellar
 brew cleanup
+
+mkdir ~/.nvm

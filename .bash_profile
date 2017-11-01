@@ -85,9 +85,9 @@ elif [ -f /etc/bash_completion ]; then
 fi;
 
 # homebrew completion
-if  which brew > /dev/null; then
-    source `brew --repository`/Library/Contributions/brew_bash_completion.sh
-fi;
+#if  which brew > /dev/null; then
+#    source `brew --repository`/Library/Contributions/brew_bash_completion.sh
+#fi;
 
 # hub completion
 if  which hub > /dev/null; then
@@ -116,9 +116,9 @@ shopt -s cdspell;
 
 
 # The next line updates PATH for the Google Cloud SDK.
-source '/Users/Anenth/google-cloud-sdk/path.bash.inc'
+# source '/Users/Anenth/google-cloud-sdk/path.bash.inc'
 
 # The next line enables bash completion for gcloud.
-source '/Users/Anenth/google-cloud-sdk/completion.bash.inc'
+# source '/Users/Anenth/google-cloud-sdk/completion.bash.inc'
 
 source '/usr/local/bin/virtualenvwrapper.sh'
