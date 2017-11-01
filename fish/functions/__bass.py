@@ -1,1 +1,0 @@
-/Users/anenth/.config/fisherman/bass/functions/__bass.py

@@ -1,1 +1,0 @@
-/Users/anenth/.config/fisherman/nvm/node.fish

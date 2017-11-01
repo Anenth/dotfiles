@@ -30,6 +30,7 @@ fishd.*
 .config/fish/fish_history
 fish/fish_history
 fish/functions #Everything is added via fisher
+fish/functions/
 
 # random
 shilocation

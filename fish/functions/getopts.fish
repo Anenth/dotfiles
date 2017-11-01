@@ -1,1 +1,0 @@
-/Users/anenth/.config/fisherman/getopts/getopts.fish
