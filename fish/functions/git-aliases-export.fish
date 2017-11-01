@@ -1,0 +1,1 @@
+/Users/anenth/.config/fisherman/git-aliases-export/git-aliases-export.fish

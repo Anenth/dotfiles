@@ -13,6 +13,7 @@ brew install caskroom/cask/brew-cask
 # daily
 brew cask install spectacle
 brew cask install dropbox
+brew cask install google-drive-file-stream
 brew cask install gyazo
 brew cask install 1password
 brew cask install rescuetime
@@ -22,6 +23,7 @@ brew cask install fantastical
 brew cask install slack
 brew cask install spark
 brew cask install alfred
+brew cask install boostnote
 
 # brew cask install flux
 
@@ -38,7 +40,7 @@ brew cask install imageoptim
 brew cask install avocode
 
 # fun
-brew cask install limechat
+# brew cask install limechat
 # brew cask install miro-video-converter
 # brew cask install horndis               # usb tethering
 
@@ -56,6 +58,10 @@ brew cask install vlc
 brew cask install gpgtools
 brew cask install licecap
 brew cask install tunnelblick
+brew cask install screenhero
+brew cask install zoomus
+brew cask install skype
+brew cask install sketch
 # brew cask install utorrent
 
 brew cask install spotify

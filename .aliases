@@ -94,13 +94,12 @@ alias update_brew_npm_gem='brew_update; npm install npm -g; npm update -g; sudo 
 
 
 alias sshp='ssh -i ~/Code/amazon/amazonkey.pem ubuntu@52.3.8.97'
-alias e="emacs"
 alias i="invoke"
 alias irs="wr && invoke rs"
 alias ig="wr && i grunt"
 alias w="workon"
 alias gw="gulp watch"
-alias zsh="vim ~/.zshrc && . ~/.zshrc"
+alias zshe="vim ~/.zshrc && . ~/.zshrc"
 alias .zsh=". ~/.zshrc"
 
 alias ggpush-heroku="git push heroku master"
@@ -111,7 +110,6 @@ alias rb='cd ~/code/aplopio/recruiterbox'
 alias ic="wr && i celery.p &&  i celery.d"
 alias wr="rb && workon r2"
 alias wj="cd ~/code/aplopio/job-distribution-service && workon rbox-jds"
-alias test-s="python manage.py test selenium_tests"
 alias gpr="hub pull-request "
 
 alias git-alias="cat ~/.antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh.git/plugins/git/git.plugin.zsh"

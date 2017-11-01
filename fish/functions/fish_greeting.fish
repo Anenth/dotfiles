@@ -1,0 +1,1 @@
+/Users/anenth/.config/fisherman/pure/fish_greeting.fish

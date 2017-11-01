@@ -1,0 +1,1 @@
+/Users/anenth/.config/fisherman/pure/installer.fish

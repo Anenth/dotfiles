@@ -29,6 +29,7 @@ Thumbs.db
 fishd.*
 .config/fish/fish_history
 fish/fish_history
+fish/functions #Everything is added via fisher
 
 # random
 shilocation

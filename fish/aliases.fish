@@ -1,4 +1,4 @@
-
+source ~/.config/fish/git-aliases-export.fish
 
 # Navigation
 function ..    ; cd .. ; end
@@ -56,3 +56,11 @@ alias fs="stat -f \"%z bytes\""
 alias brew_update="brew -v update; brew upgrade --force-bottle --cleanup; brew cleanup; brew cask cleanup; brew prune; brew doctor; npm-check -g -u"
 alias update_brew_npm_gem='brew_update; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update --no-rdoc --no-ri'
 
+
+
+alias ggpush-heroku="git push heroku master"
+alias gcrm="gco recruiterbox_main and COMMAND ggpur"
+alias gmr="gm recruiterbox_main"
+
+alias rb='cd ~/code/aplopio/recruiterbox'
+alias gpr="hub pull-request "

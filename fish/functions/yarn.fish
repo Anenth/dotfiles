@@ -1,0 +1,1 @@
+/Users/anenth/.config/fisherman/nvm/yarn.fish

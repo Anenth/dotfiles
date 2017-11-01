@@ -1,16 +1,14 @@
-set default_user "paulirish"
-set default_machine "paulirish-macbookair2"
+set default_user "anenth"
+set default_machine "anenth-mac"
+set -g fish_greeting 'Do somthing awesome today'
 
-
-#set -x  DYLD_FALLBACK_LIBRARY_PATH /Users/paulirish/.homebrew/lib
+#set -x  DYLD_FALLBACK_LIBRARY_PATH /Users/anenth/.homebrew/lib
 
 source ~/.config/fish/path.fish
 source ~/.config/fish/aliases.fish
-source ~/.config/fish/chpwd.fish
+# source ~/.config/fish/chpwd.fish
 source ~/.config/fish/functions.fish
-
-
-
+# source ~/.config/fish/nvm-wrapper/nvm.fishs
 
 
 # Completions
@@ -90,3 +88,8 @@ set -gx LESS_TERMCAP_us \e'[04;38;5;146m' # begin underline
 
 # this currently messes with newlines in my prompt. lets debug it later.
 # test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
+
+# PROMPT
+if set -q VIRTUAL_ENV
+    echo -n -s (set_color -b blue white) "(" (basename "$VIRTUAL_ENV") ")" (set_color normal) " "
+end
