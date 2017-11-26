@@ -10,6 +10,8 @@ source ~/.config/fish/aliases.fish
 source ~/.config/fish/functions.fish
 # source ~/.config/fish/nvm-wrapper/nvm.fishs
 
+# Ruby
+status --is-interactive; and source (rbenv init -|psub)
 
 # Completions
 function make_completion --argument-names alias command
@@ -93,3 +95,9 @@ set -gx LESS_TERMCAP_us \e'[04;38;5;146m' # begin underline
 if set -q VIRTUAL_ENV
     echo -n -s (set_color -b blue white) "(" (basename "$VIRTUAL_ENV") ")" (set_color normal) " "
 end
+
+
+# Theme
+set -g theme_display_docker_machine no
+set -g theme_display_ruby no
+set -g theme_git_worktree_support no

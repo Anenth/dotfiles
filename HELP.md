@@ -1,2 +1,10 @@
-ZSH plugins are managed my http://antigen.sharats.me/
-VIM plugins are managed my plug
+#SHELL
+- Fish shell
+- Fisher for plugin managment
+
+#VIM
+- NeoVim 
+- VIM plugins are managed my plug
+
+#Other dotfiles
+https://github.com/nicknisi/dotfiles

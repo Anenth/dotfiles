@@ -68,6 +68,11 @@ function code
   open -n -b "com.microsoft.VSCode" --args $location
 end
 
+function codee
+  set location "$PWD/$argv"
+  open -n -b "com.microsoft.VSCode" --args --disable-extensions $location
+end
+
 function fuck -d 'Correct your previous console command'
     set -l exit_code $status
     set -l eval_script (mktemp 2>/dev/null ; or mktemp -t 'thefuck')

@@ -58,9 +58,13 @@ alias update_brew_npm_gem='brew_update; npm install npm -g; npm update -g; sudo 
 
 
 
-alias ggpush-heroku="git push heroku master"
-alias gcrm="gco recruiterbox_main and COMMAND ggpur"
-alias gmr="gm recruiterbox_main"
+alias ggpush-heroku 'git push heroku master'
+alias gcrm 'gco recruiterbox_main ;and ggpur'
+alias gmr 'gm recruiterbox_main'
 
-alias rb='cd ~/code/aplopio/recruiterbox'
-alias gpr="hub pull-request "
+alias rb 'cd ~/code/aplopio/recruiterbox'
+alias gpr 'hub pull-request'
+
+
+# Recruiterbox specific
+alias wd 'cd ~/code/aplopio/recruiterbox/docker/dev ;and workon docker'

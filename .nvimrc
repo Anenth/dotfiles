@@ -1,31 +1,5 @@
 " vim:fdm=marker
 
-" Abbreviations
-abbr funciton function
-abbr teh the
-abbr tempalte template
-abbr fitler filter
-abbr cosnt const
-abbr attribtue attribute
-abbr attribuet attribute
-
-set nocompatible            " not compatible with vi
-set autoread                " detect when a file is changed
-
-set history=1000            " change history to 1000
-set textwidth=120
-
-set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-
-if (has('nvim'))
-	" show results of substition as they're happening
-	" but don't open a split
-	set inccommand=nosplit
-endif
-
-" }}}
-"
 " Settings -------------------------------------------------------------
 
 " Preamble {{{
@@ -53,11 +27,19 @@ set undodir=~/.vim/undo
 
 " Set some junk {{{
 set autoindent " Copy indent from last line when starting new line
+set backspace=indent,eol,start
 set cursorline " Highlight current line
 set diffopt=filler " Add vertical spaces to keep right and left aligned
 set diffopt+=iwhite " Ignore whitespace changes (focus on code changes)
 set encoding=utf-8 nobomb " BOM often causes trouble
+set esckeys " Allow cursor keys in insert mode
 set expandtab " Expand tabs to spaces
+set foldcolumn=0 " Column to show folds
+set foldenable " Enable folding
+set foldlevel=0 " Close all folds by default
+set foldmethod=syntax " Syntax are used to specify folds
+set foldminlines=0 " Allow folding single lines
+set foldnestmax=5 " Set max fold nesting level
 set formatoptions=
 set formatoptions+=c " Format comments
 set formatoptions+=r " Continue comments by default
@@ -106,6 +88,7 @@ set suffixes=.bak,~,.swp,.swo,.o,.d,.info,.aux,.log,.dvi,.pdf,.bin,.bbl,.blg,.br
 set switchbuf=""
 set title " Show the filename in the window titlebar
 set ttyfast " Send more characters at a given time
+set ttymouse=xterm " Set mouse type to xterm
 set undofile " Persistent Undo
 set viminfo=%,'9999,s512,n~/.vim/viminfo " Restore buffer list, marks are remembered for 9999 files, registers up to 512Kb are remembered
 set visualbell " Use visual bell instead of audible bell (annnnnoying)
@@ -120,35 +103,10 @@ set winminheight=0 " Allow splits to be reduced to a single line
 set wrapscan " Searches wrap around end of file
 set guifont=Source\ Code\ Pro\ for\ Powerline
 set showcmd
-if has('mouse')
-	set mouse=a
-	" set ttymouse=xterm2
-endif
 " }}}
 
 " }}}
 
-
-" make backspace behave in a sane manner
-set backspace=indent,eol,start
-
-" Tab control
-set noexpandtab             " insert tabs rather than spaces for <Tab>
-set smarttab                " tab respects 'tabstop', 'shiftwidth', and 'softtabstop'
-set tabstop=4               " the visible width of tabs
-set softtabstop=4           " edit as if the tabs are 4 characters wide
-set shiftwidth=4            " number of spaces to use for indent and unindent
-set shiftround              " round indent to a multiple of 'shiftwidth'
-set completeopt+=longest
-
-" code folding settings
-set foldmethod=syntax       " fold based on indent
-set foldlevelstart=99
-set foldnestmax=10          " deepest fold is 10 levels
-set nofoldenable            " don't fold by default
-set foldlevel=1
-
-set clipboard=unnamedplus
 
 " Configuration -------------------------------------------------------------
 
@@ -657,14 +615,6 @@ augroup syntastic_config
 augroup END
 " }}}
 
-
-" Prettier.vim {{{
-augroup prettier  
-  autocmd!
-
-augroup END
-" }}}
-
 " Plugins -------------------------------------------------------------
 
 " Load plugins {{{
@@ -701,10 +651,6 @@ Plug 'xolox/vim-notes'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'scrooloose/nerdtree'
 Plug 'elmcast/elm-vim'
-Plug 'dag/vim-fish'
-Plug 'prettier/vim-prettier', {
-    \ 'do': 'npm install',
-    \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss'] }
 
 call plug#end()
 " }}}

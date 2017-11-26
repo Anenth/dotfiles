@@ -31,6 +31,7 @@ brew install wget --with-iri
 
 # Install more recent versions of some OS X tools
 brew install vim --with-override-system-vi
+brew install neovim
 brew install homebrew/dupes/nano
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
@@ -81,6 +82,9 @@ brew install antigen
 
 # https://passingcuriosity.com/2013/dnsmasq-dev-osx/
 brew install dnsmasq
+
+# Ruby
+brew install rbenv
 
 # Remove outdated versions from the cellar
 brew cleanup

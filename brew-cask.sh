@@ -21,7 +21,6 @@ brew cask install wunderlist
 brew cask install cleanmymac
 brew cask install fantastical
 brew cask install slack
-brew cask install spark
 brew cask install alfred
 brew cask install boostnote
 
@@ -62,13 +61,15 @@ brew cask install screenhero
 brew cask install zoomus
 brew cask install skype
 brew cask install sketch
+brew cask install numi
 # brew cask install utorrent
 
 brew cask install spotify
 
 brew tap caskroom/fonts 
 brew cask install font-fira-code
-
+brew cask install recordit
+brew cask install pomotodo
 
 # Not on cask but I want regardless.
 

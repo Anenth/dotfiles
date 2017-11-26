@@ -1,11 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/Users/Anenth'
-let g:netrw_dirhist_2='/Users/Anenth/Code'
-let g:netrw_dirhist_3='/Users/Anenth/Code/Aplopio'
-let g:netrw_dirhist_4='/Users/Anenth/Code/Aplopio/recruiterbox'
-let g:netrw_dirhist_5='/Users/Anenth'
-let g:netrw_dirhist_6='/Users/Anenth/Code'
-let g:netrw_dirhist_7='/Users/Anenth/Code/Aplopio'
-let g:netrw_dirhist_8='/Users/Anenth/Code/Aplopio/recruiterbox'
-let g:netrw_dirhist_9='/Users/Anenth/Code/Aplopio/recruiterbox/json_field'
+let g:netrw_dirhist_cnt =0
