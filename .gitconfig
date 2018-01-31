@@ -97,6 +97,7 @@
 	excludesfile = /Users/Anenth/.gitignore
 	attributesfile = ~/.gitattributes
 	autocrlf = false
+	editor = nvim
 
 [pager]
 	# insanely beautiful diffs ==> npm install -g diff-so-fancy

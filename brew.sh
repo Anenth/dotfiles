@@ -63,7 +63,7 @@ brew install fzf
 brew install git
 brew install imagemagick --with-webp
 brew install node # This installs `npm` too using the recommended installation method
-brew install nvm
+#brew install nvm
 brew install pv
 brew install rename
 brew install tree
@@ -77,11 +77,13 @@ brew install pidcat   # colored logcat guy
 
 brew install ncdu # find where your diskspace went
 
-brew install zsh
-brew install antigen
+#brew install zsh
+#brew install antigen
 
+brew install youtube-dl
 # https://passingcuriosity.com/2013/dnsmasq-dev-osx/
-brew install dnsmasq
+brew install ensmasq
+brew install caskformula/caskformula/inkscape
 
 # Ruby
 brew install rbenv
@@ -89,4 +91,4 @@ brew install rbenv
 # Remove outdated versions from the cellar
 brew cleanup
 
-mkdir ~/.nvm
+#mkdir ~/.nvm

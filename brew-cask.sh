@@ -62,6 +62,7 @@ brew cask install zoomus
 brew cask install skype
 brew cask install sketch
 brew cask install numi
+brew cask install transmission
 # brew cask install utorrent
 
 brew cask install spotify

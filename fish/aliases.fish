@@ -44,7 +44,9 @@ alias cleanup_dsstore="find . -name '*.DS_Store' -type f -ls -delete"
 
 # Shortcuts
 alias g="git"
-alias v="vim"
+alias vimold="vim"
+alias v="nvim"
+alias vim="nvim"
 alias ungz="gunzip -k"
 
 # File size

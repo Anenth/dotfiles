@@ -2,6 +2,7 @@ set default_user "anenth"
 set default_machine "anenth-mac"
 set -g fish_greeting 'Do somthing awesome today'
 
+
 #set -x  DYLD_FALLBACK_LIBRARY_PATH /Users/anenth/.homebrew/lib
 
 source ~/.config/fish/path.fish
