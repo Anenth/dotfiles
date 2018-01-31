@@ -1,0 +1,1 @@
+/Users/anenth/.config/fisherman/git/init.fish
