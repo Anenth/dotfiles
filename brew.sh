@@ -61,6 +61,8 @@ brew install the_silver_searcher
 brew install fzf
 
 brew install git
+brew tap jesseduffield/lazygit
+brew install lazygit
 brew install imagemagick --with-webp
 brew install node # This installs `npm` too using the recommended installation method
 #brew install nvm
@@ -83,7 +85,10 @@ brew install ncdu # find where your diskspace went
 brew install youtube-dl
 # https://passingcuriosity.com/2013/dnsmasq-dev-osx/
 brew install ensmasq
-brew install caskformula/caskformula/inkscape
+
+#brew install caskformula/caskformula/inkscape
+
+brew install tmux
 
 # Ruby
 brew install rbenv

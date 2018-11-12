@@ -44,7 +44,8 @@ alias gcf 'git config --list'
 alias gcl 'git clone --recursive'
 alias gclean 'git clean -fd'
 alias gpristine 'git reset --hard & git clean -dfx'
-alias gcm 'git checkout master'
+alias gcmo 'git checkout master'
+alias gcm 'gcmo & ggpur'
 alias gcmsg 'git commit -m'
 alias gco 'git checkout'
 alias gcount 'git shortlog -sn'
@@ -145,3 +146,7 @@ alias glum 'git pull upstream master'
 
 alias gwch 'git whatchanged -p --abbrev-commit --pretty medium'
 alias gwip 'git add -A; git rm (git ls-files --deleted) 2> /dev/null; git commit -m "--wip--"'
+
+alias l 'lazygit'
+alias ggrh 'git reset --hard origin/(git_current_branch)'
+

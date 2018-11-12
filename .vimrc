@@ -674,7 +674,6 @@ Plug 'ap/vim-css-color'
 Plug 'bling/vim-airline'
 Plug 'FelikZ/ctrlp-py-matcher'
 Plug 'guns/vim-clojure-static'
-Plug 'joker1007/vim-ruby-heredoc-syntax'
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/vim-emoji'
 Plug 'junegunn/goyo.vim'
@@ -692,7 +691,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-markdown',     { 'for': 'markdown' }
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
-Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/jade.vim',   { 'for': 'jade' }
 Plug 'wavded/vim-stylus',      { 'for': 'stylus' }
 Plug 'wlangstroth/vim-racket'
