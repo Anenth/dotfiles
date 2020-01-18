@@ -102,3 +102,30 @@ end
 set -g theme_display_docker_machine no
 set -g theme_display_ruby no
 set -g theme_git_worktree_support no
+
+
+# rbenv
+status --is-interactive; and source (rbenv init -|psub)
+
+
+set -g fish_user_paths "/Users/anenth/.homebrew/opt/icu4c/bin" $fish_user_paths
+set -g fish_user_paths "/Users/anenth/.homebrew/opt/icu4c/sbin" $fish_user_paths
+set -gx LDFLAGS "-L/Users/anenth/.homebrew/opt/icu4c/lib"
+set -gx CPPFLAGS "-I/Users/anenth/.homebrew/opt/icu4c/include"
+set -gx PKG_CONFIG_PATH "/Users/anenth/.homebrew/opt/icu4c/lib/pkgconfig"
+
+# ImageMagick
+set -g fish_user_paths "/Users/anenth/.homebrew/opt/imagemagick@6/bin" $fish_user_paths
+set -gx LDFLAGS "-L/Users/anenth/.homebrew/opt/imagemagick@6/lib"
+set -gx CPPFLAGS "-I/Users/anenth/.homebrew/opt/imagemagick@6/include"
+set -gx PKG_CONFIG_PATH "/Users/anenth/.homebrew/opt/imagemagick@6/lib/pkgconfig"
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[ -f /Users/anenth/.homebrew/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.fish ]; and . /Users/anenth/.homebrew/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.fish
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[ -f /Users/anenth/.homebrew/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.fish ]; and . /Users/anenth/.homebrew/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.fish
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[ -f /Users/anenth/.homebrew/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.fish ]; and . /Users/anenth/.homebrew/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.fish

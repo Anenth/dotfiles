@@ -58,6 +58,8 @@ set VIRTUALFISH_HOME ~/Envs
 set VIRTUALENVWRAPPER_PYTHON /usr/bin/python
 eval (python -m virtualfish compat_aliases)
 
+# Postgres
+set -x PATH /Applications/Postgres.app/Contents/Versions/latest/bin $PATH
 
 # set --export DOCKER_HOST tcp://192.168.99.100:2376
 # set --export DOCKER_CERT_PATH /Users/anenth/.docker/machine/machines/dinghy
