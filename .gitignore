@@ -31,6 +31,9 @@ fishd.*
 fish/fish_history
 fish/functions #Everything is added via fisher
 fish/functions/
+fish/conf.d/
+fish/completions/
+fish/conf.d
 
 # random
 shilocation

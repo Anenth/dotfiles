@@ -65,7 +65,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # z beats cd most of the time.
 #   github.com/rupa/z
-source ~/code/z/z.sh
+# source ~/code/z/z.sh
 
 
 
@@ -121,4 +121,4 @@ shopt -s cdspell;
 # The next line enables bash completion for gcloud.
 # source '/Users/Anenth/google-cloud-sdk/completion.bash.inc'
 
-source '/usr/local/bin/virtualenvwrapper.sh'
+# source '/usr/local/bin/virtualenvwrapper.sh'

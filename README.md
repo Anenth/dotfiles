@@ -32,3 +32,18 @@ Install fish shell
 fisherman for fish shell plugin manager
   curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
 
+
+
+### TODO
+#### 1. Install dropbox
+#### 2. Install 1password
+#### 3. Add SSH to github
+
+  ```
+  ssh-keygen -t rsa -b 4096 -C "anenthvishnu@gmail.com"
+  ssh-add -K ~/.ssh/id_rsa
+  pbcopy < ~/.ssh/id_rsa.pub
+  ```
+  Paste it here https://github.com/settings/keys
+
+#### 
