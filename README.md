@@ -46,4 +46,5 @@ fisherman for fish shell plugin manager
   ```
   Paste it here https://github.com/settings/keys
 
-#### 
+#### Other Apps 
+PixelSnap 2 https://gumroad.com/d/22c168f44d6ff77a4ed3b31b8b6709f3

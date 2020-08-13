@@ -46,10 +46,6 @@ brew install entr
 # Install other useful binaries
 brew install the_silver_searcher
 brew install fzf
-
-brew install git
-brew tap jesseduffield/lazygit
-brew install lazygit
 brew install imagemagick --with-webp
 brew install nvm
 brew install pv
@@ -79,3 +75,12 @@ mkdir ~/.nvm
 # fish
 brew install fish
 curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
+
+
+# Development
+brew install git
+brew tap jesseduffield/lazygit
+brew install lazygit
+brew install dnsmasq
+brew install mkcert # custom https certificate
+brew install nss # if you use Firefox
