@@ -15,7 +15,7 @@ SETUVAR __fish_git_prompt_char_stagedstate:\U0001f6a5\x20
 SETUVAR __fish_git_prompt_char_stashstate:\U0001f4e6\x20
 SETUVAR __fish_git_prompt_char_stateseparator:\x20
 SETUVAR __fish_git_prompt_char_untrackedfiles:\U0001f50d\x20
-SETUVAR __fish_git_prompt_char_upstream_ahead:\x20\u261d\x20\ufe0f
+SETUVAR __fish_git_prompt_char_upstream_ahead:\x20\U0001f446\x20\ufe0f
 SETUVAR __fish_git_prompt_char_upstream_behind:\U0001f447\x20
 SETUVAR __fish_git_prompt_color_branch:yellow
 SETUVAR __fish_git_prompt_color_dirtystate:red
