@@ -32,6 +32,7 @@ Install fish shell
 fisherman for fish shell plugin manager
   curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
 
+###Prompt
 
 
 ### TODO
