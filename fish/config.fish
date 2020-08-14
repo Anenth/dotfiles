@@ -29,11 +29,12 @@ set __fish_git_prompt_color_dirtystate_behind white --bold
 # set __fish_git_prompt_color_upstream_ahead green
 # set __fish_git_prompt_color_upstream_behind red
 
+set tide_pwd_max_dirs 3
 
 # # Icons
-set __fish_git_prompt_char_cleanstate '👍 '
+set __fish_git_prompt_char_cleanstate '👍'
 set __fish_git_prompt_char_conflictedstate '⚠️ '
-set __fish_git_prompt_char_dirtystate '💩  '
+set __fish_git_prompt_char_dirtystate '💩 '
 set __fish_git_prompt_char_invalidstate '🤮 '
 set __fish_git_prompt_char_stagedstate '🚥 '
 set __fish_git_prompt_char_stashstate '📦 '
