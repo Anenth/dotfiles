@@ -1,0 +1,10 @@
+
+autocmd InsertEnter * : set norelativenumber
+autocmd InsertLeave * : set relativenumber
+
+# https://github.com/JetBrains/ideavim/blob/master/doc/emulated-plugins.md
+set easymotion
+set surround
+set commentary
+
+

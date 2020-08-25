@@ -24,14 +24,10 @@ alias brwe=brew  #typos
 
 alias hosts='sudo $EDITOR /etc/hosts'   # yes I occasionally 127.0.0.1 twitter.com ;)
 
-alias push="git push"
-
 alias ag='ag --follow --hidden'
 
 alias diskspace_report="df -P -kHl"
 alias free_diskspace_report="diskspace_report"
-
-alias master="git checkout master"
 
 # Networking. IP address, dig, DNS
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -44,7 +40,6 @@ alias cleanup_dsstore="find . -name '*.DS_Store' -type f -ls -delete"
 
 # Shortcuts
 alias g="git"
-alias vimold="vim"
 alias v="nvim"
 alias vim="nvim"
 alias ungz="gunzip -k"
