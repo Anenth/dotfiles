@@ -67,3 +67,5 @@ set tide_pwd_max_dirs 1
 # 	    echo -n ' '
 # 	end
 # end
+
+starship init fish | source

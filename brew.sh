@@ -74,6 +74,8 @@ mkdir ~/.nvm
 
 # fish
 brew install fish
+brew install starship
+
 curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
 
 
