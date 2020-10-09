@@ -25,6 +25,7 @@ brew cask install notion
 brew cask install kap
 brew cask install google-chrome
 brew cask install firefox
+brew cask install brave-browser
 
 # dev
 brew cask install iterm2
@@ -52,6 +53,7 @@ brew cask install fanny
 
 brew cask install spotify
 
+brew cask install discord
 brew tap caskroom/fonts 
 brew cask install font-fira-code
 brew tap homebrew/cask-fonts
