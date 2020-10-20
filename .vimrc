@@ -18,6 +18,22 @@ set textwidth=120
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
+let g:coc_node_path= glob('~/.nvm/versions/node/v14.7.0/bin/node')
+" coc config
+let g:coc_global_extensions = [
+	\ 'coc-css',
+	\ 'coc-highlight',
+	\ 'coc-html',
+	\ 'coc-json',
+	\ 'coc-snippets',
+	\ 'coc-stylelint',
+	\ 'coc-tag',
+	\ 'coc-eslint', 
+	\ 'coc-prettier', 
+	\ 'coc-tsserver'
+\ ]
+" let g:coc_node_path = trim(system('which node'))
+
 if (has('nvim'))
 	" show results of substition as they're happening
 	" but don't open a split
@@ -670,6 +686,7 @@ augroup END
 " Load plugins {{{
 call plug#begin('~/.vim/plugged')
 
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ap/vim-css-color'
 Plug 'bling/vim-airline'
 Plug 'FelikZ/ctrlp-py-matcher'
@@ -691,7 +708,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-markdown',     { 'for': 'markdown' }
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
-Plug 'vim-scripts/jade.vim',   { 'for': 'jade' }
 Plug 'wavded/vim-stylus',      { 'for': 'stylus' }
 Plug 'wlangstroth/vim-racket'
 Plug 'xolox/vim-misc'

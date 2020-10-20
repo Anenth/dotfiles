@@ -50,9 +50,10 @@ brew cask install zoomus
 brew cask install figma
 brew cask install transmission
 brew cask install fanny
-
+brew cask install lunar
 brew cask install spotify
 
+brew cask install lulu
 brew cask install discord
 brew tap caskroom/fonts 
 brew cask install font-fira-code
