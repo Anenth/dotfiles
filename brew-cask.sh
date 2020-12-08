@@ -61,5 +61,6 @@ brew tap homebrew/cask-fonts
 brew cask install font-hack-nerd-font
 
 # Not on cask but I want regardless.
+brew cask install inkscape
 
 # https://www.focustodo.cn/
