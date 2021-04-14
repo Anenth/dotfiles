@@ -32,10 +32,10 @@ brew install wget --with-iri
 # Install more recent versions of some OS X tools
 brew install vim --with-override-system-vi
 brew install neovim
-brew install homebrew/dupes/nano
-brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh
-brew install homebrew/dupes/screen
+brew install nano
+brew install grep
+brew install openssh
+brew install screen
 
 # z hopping around folders
 # brew install z
@@ -54,6 +54,8 @@ brew install tree
 brew install zopfli
 brew install ffmpeg --with-libvpx
 brew install gnupg
+brew install exa # Replacement for ls
+brew install git-delta
 
 
 brew install terminal-notifier

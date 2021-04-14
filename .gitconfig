@@ -7,78 +7,33 @@
 	s = status
 	sclone = clone --depth=1
 	amend = commit --amend --all
+	undocommit = reset HEAD~
 	hreset = reset --hard
 	co = checkout
 	df = diff --color --color-words --abbrev
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+	cherrypick = cherry-pick
+	cherry = cherry-pick
+	cp = cherry-pick
+	diffbranch = !"git diff $(git merge-base HEAD origin/master)"
 
+	# show commit log of unique commits of this branch (not on master)
+	diffcommitsfrommaster = log --no-merges master..
+	# show unified diff of unique commits of this branch
+	difffrommaster = diff master...
+	# ^^^^ Holy crap two dots vs three dots, so important. https://stackoverflow.com/a/48681527
+	
 	# Show the diff between the latest commit and the current state
 	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
-
-	# Merge GitHub pull request on top of the `master` branch
-	mpr = "!f() { \
-		if [ $(printf \"%s\" \"$1\" | grep '^[0-9]\\+$' > /dev/null; printf $?) -eq 0 ]; then \
-			git fetch origin refs/pull/$1/head:pr/$1 && \
-			git rebase master pr/$1 && \
-			git checkout master && \
-			git merge pr/$1 && \
-			git branch -D pr/$1 && \
-			git commit --amend -m \"$(git log -1 --pretty=%B)\n\nCloses #$1.\"; \
-		fi \
-	}; f"
+	
+	reup = rebase-update # depot_tools specific
+	git = !exec git
 
 	#
-  # Working with branches
-  #
-
-  # Get the current branch name (not so useful in itself, but used in
-  # other aliases)
-  branch-name = "!git rev-parse --abbrev-ref HEAD"
-  # Push the current branch to the remote "origin", and set it to track
-  # the upstream branch
-  publish = "!git push -u origin $(git branch-name)"
-  # Delete the remote version of the current branch
-  unpublish = "!git push origin :$(git branch-name)"
   # Delete a branch and recreate it from master â€”Â useful if you have, say,
   # a development branch and a master branch and they could conceivably go
   # out of sync
   recreate = "!f() { [[ -n $@ ]] && git checkout \"$@\" && git unpublish && git checkout master && git branch -D \"$@\" && git checkout -b \"$@\" && git publish; }; f"
-
-  # Fire up your difftool (e.g. Kaleidescope) with all the changes that
-  # are on the current branch.
-  code-review = difftool origin/master...
-
-  # Given a merge commit, find the span of commits that exist(ed) on that
-  # branch. Again, not so useful in itself, but used by other aliases.
-  merge-span = "!f() { echo $(git log -1 $2 --merges --pretty=format:%P | cut -d' ' -f1)$1$(git log -1 $2 --merges --pretty=format:%P | cut -d' ' -f2); }; f"
-
-  # Find the commits that were introduced by a merge
-  merge-log = "!git log `git merge-span .. $1`"
-  # Show the changes that were introduced by a merge
-  merge-diff = "!git diff `git merge-span ... $1`"
-  # As above, but in your difftool
-  merge-difftool = "!git difftool `git merge-span ... $1`"
-
-  # Interactively rebase all the commits on the current branch
-  rebase-branch = "!git rebase -i `git merge-base master HEAD`"
-
-  #
-  # Working with files
-  #
-
-  # Unstage any files that have been added to the staging area
-  unstage = reset HEAD
-  # Show changes that have been staged
-  diffc = diff --cached
-
-  # Mark a file as "assume unchanged", which means that Git will treat it
-  # as though there are no changes to it even if there are. Useful for
-  # temporary changes to tracked files
-  assume = update-index --assume-unchanged
-  # Reverse the above
-  unassume = update-index --no-assume-unchanged
-  # Show the files that are currently assume-unchanged
-  assumed = "!git ls-files -v | grep ^h | cut -c 3-"
 
   # Checkout our version of a file and add it
   ours = "!f() { git checkout --ours $@ && git add $@; }; f"
@@ -90,22 +45,36 @@
   delete-merged-branches = "!gcm && git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
   delete-merged-branches-rbox = "!git branch --merged origin/recruiterbox_main | grep -v 'recruiterbox_main' | xargs -n 1 git branch -d"
   g = grep --break --heading --line-number
-	reup = rebase-update # depot_tools specific
-	fpush = push --force
 
 [core]
-	excludesfile = /Users/Anenth/.gitignore
+	excludesfile = ~/.gitignore
 	attributesfile = ~/.gitattributes
-	autocrlf = false
+	precomposeUnicode = true
 	editor = nvim
 
 [pager]
-	# insanely beautiful diffs ==> npm install -g diff-so-fancy
-	diff = diff-so-fancy | less --tabs=4 -RFX
-	show = diff-so-fancy | less --tabs=4 -RFX
+	# or not... # insanely beautiful diffs ==> npm install -g diff-so-fancy
+	# https://github.com/dandavison/delta
+	diff = delta # diff-so-fancy | less --tabs=4 -RFX
+	show = delta # diff-so-fancy | less --tabs=4 -RFX
+
+[delta]
+	max-line-length = 700
+	max-line-distance = 0.3 # better word-diff?
+    # plus-style = "#012800"
+    # minus-style = "#340001"
+    # zero-style = "#999999"
+    syntax-theme = base16
+    # hyperlinks = true # broken? https://github.com/dandavison/delta/issues/362
+    # navigate = true # eh. not great with short diffs.
+
+    file-decoration-style = yellow ol ul
+    file-style = bold yellow ul
+    hunk-header-decoration-style = none
 
 [interactive]
-  # disabled until github.com/so-fancy/diff-so-fancy/pull/172 is resolved :(
+	diffFilter = delta --color-only
+  	# disabled until github.com/so-fancy/diff-so-fancy/pull/172 is resolved :(
 	# diffFilter = "diff-so-fancy"
 
 # so much color
@@ -118,6 +87,11 @@
 	old = red bold
 	new = green bold
 	whitespace = red reverse
+
+	newMoved = cyan dim
+	oldMoved = blue dim
+	newMovedAlternative = cyan italic
+	oldMovedAlternative = blue italic
 [color "diff-highlight"]
 	oldNormal = red bold
 	oldHighlight = "red bold 52"
@@ -161,11 +135,16 @@
 # push easily. http://stackoverflow.com/a/23918418/89484
 [push]
 	default = current
+	followTags = true
 [pull]
+	ff = only
+	default = current
 	rebase = true
 [rerere]
 	enabled = true
 	followTags = true
+[checkout]
+	defaultRemote = origin
 
 # use separate file for username / github token / etc
 [include]
@@ -175,36 +154,18 @@
 #	templatedir = ~/.git_template
 
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
 	required = true
-	process = git-lfs filter-process
 
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
- 	trustexitcode = true
-[difftool "Kaleidoscope"]
- 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[difftool]
- 	prompt = false
-[mergetool]
- 	prompt = false
-[grep]
-	extendRegexp = true
-	lineNumber = true
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
-[http]
-	postBuffer = 1524288000
 [fetch]
 	prune = true
 [diff]
-	compactionHeuristic = true
-# [remote "origin"]
-	# fetch = +refs/heads/*:refs/remotes/origin/*
+    # Show blocks of moved text of at least 20 alphanumeric characters differently than adds/deletes
+    # https://blog.github.com/2018-04-05-git-217-released/
+    colorMoved = zebra
+
 [stash]
 	showPatch = true
+[log]
+	date = relative

@@ -18,7 +18,6 @@ alias rm 'command grm --interactive --verbose'
 alias cp 'command gcp --interactive --verbose'
 
 
-alias cask='brew cask' # i <3 u cask
 alias where=which # sometimes i forget
 alias brwe=brew  #typos
 
