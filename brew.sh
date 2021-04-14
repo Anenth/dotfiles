@@ -62,7 +62,7 @@ brew install ncdu # find where your diskspace went
 
 brew install youtube-dl
 # https://passingcuriosity.com/2013/dnsmasq-dev-osx/
-brew install ensmasq
+brew install dnsmasq
 brew install tmux
 
 
@@ -83,8 +83,14 @@ curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fi
 
 # Development
 brew install git
+brew install openssl
+brew install readline
 brew tap jesseduffield/lazygit
 brew install lazygit
 brew install dnsmasq
 brew install mkcert # custom https certificate
 brew install nss # if you use Firefox
+brew install gh	
+# Python
+brew install pyenv
+brew install rustup

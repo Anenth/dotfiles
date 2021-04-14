@@ -12,53 +12,55 @@ brew install caskroom/cask/brew-cask
 # Get package names from https://formulae.brew.sh/cask/jetbrains-toolbox#default
 
 # daily
-brew cask install spectacle
-brew cask install dropbox
-brew cask install google-drive-file-stream # for team
-brew cask install google-backup-and-sync
-brew cask install 1password
-brew cask install cleanmymac
-brew cask install slack
-brew cask install alfred
-brew cask install boostnote
-brew cask install notion
-brew cask install kap
-brew cask install google-chrome
-brew cask install firefox
-brew cask install brave-browser
+brew install --cask spectacle
+brew install --cask dropbox
+brew install --cask google-drive-file-stream # for team
+brew install --cask google-backup-and-sync
+brew install --cask 1password
+brew install --cask cleanmymac
+brew install --cask slack
+brew install --cask alfred
+brew install --cask boostnote
+brew install --cask notion
+brew install --cask kap
+brew install --cask google-chrome
+brew install --cask firefox
+brew install --cask brave-browser
 
 # dev
-brew cask install iterm2
-brew cask install docker
-brew cask install hyper
-brew cask install sublime-text
-brew cask install visual-studio-code
-brew cask install jetbrains-toolbox
-brew cask install pycharm
-brew cask install macvim
-brew cask install imagealpha
-brew cask install imageoptim
-brew cask install pixelsnap
+brew install --cask iterm2
+brew install --cask docker
+brew install --cask hyper
+brew install --cask sublime-text
+brew install --cask visual-studio-code
+brew install --cask jetbrains-toolbox
+brew install --cask pycharm
+brew install --cask macvim
+brew install --cask imagealpha
+brew install --cask imageoptim
+brew install --cask pixelsnap
 
 # less often
-brew cask install disk-inventory-x
-brew cask install screenflow
-brew cask install vlc
-brew cask install gpgtools
-brew cask install tunnelblick
-brew cask install zoomus
-brew cask install figma
-brew cask install transmission
-brew cask install fanny
-brew cask install lunar
-brew cask install spotify
+brew install --cask disk-inventory-x
+brew install --cask screenflow
+brew install --cask vlc
+brew install --cask gpgtools
+brew install --cask tunnelblick
+brew install --cask zoomus
+brew install --cask figma
+brew install --cask transmission
+brew install --cask fanny
+brew install --cask lunar
+brew install --cask spotify
+brew install --cask insomnia
 
-brew cask install lulu
-brew cask install discord
-brew tap caskroom/fonts 
-brew cask install font-fira-code
+brew install --cask lulu
+brew install --cask discord
 brew tap homebrew/cask-fonts
-brew cask install font-hack-nerd-font
+brew install --cask font-hack-nerd-font
+brew install --cask font-fira-code-nerd-font
+brew install --cask font-jetbrains-mono-nerd-font
+brew install --cask font-sauce-code-pro-nerd-font
 
 # Not on cask but I want regardless.
 brew cask install inkscape

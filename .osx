@@ -6,6 +6,7 @@
 
 # FWIW, this `defaults find` is good at finding some set preferences.
 # e.g.    defaults find com.apple.ActivityMonitor
+# There are some good onces here https://github.com/herrbischoff/awesome-macos-command-line/blob/master/README.md#keyboard
 
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change

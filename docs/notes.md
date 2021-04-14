@@ -19,3 +19,7 @@ and run
 ```bash
 chmod +x /usr/local/bin/node
 ```
+
+
+## Install python
+Brew install pyenv, and fisher install daenney/pyenv then pyenv local 3.~ to change the version and use

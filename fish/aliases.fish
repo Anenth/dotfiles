@@ -56,4 +56,3 @@ alias update_brew_npm_gem='brew_update; npm install npm -g; npm update -g; sudo 
 
 
 alias gcrm 'gco recruiterbox_main ;and ggpur'
-alias gmr 'gm recruiterbox_main'
