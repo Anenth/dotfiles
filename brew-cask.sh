@@ -14,7 +14,6 @@ brew install caskroom/cask/brew-cask
 # daily
 brew install --cask spectacle
 brew install --cask dropbox
-brew install --cask google-drive-file-stream # for team
 brew install --cask google-backup-and-sync
 brew install --cask 1password
 brew install --cask cleanmymac
@@ -62,7 +61,5 @@ brew install --cask font-fira-code-nerd-font
 brew install --cask font-jetbrains-mono-nerd-font
 brew install --cask font-sauce-code-pro-nerd-font
 
-# Not on cask but I want regardless.
-brew cask install inkscape
 
 # https://www.focustodo.cn/

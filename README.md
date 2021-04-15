@@ -27,12 +27,17 @@
 
 
 ### shell
-Install fish shell
+1. Install fish shell
+2. Add the shell to /etc/shells with:
+> echo /usr/local/bin/fish | sudo tee -a /etc/shells
+> chsh -s /usr/local/bin/fish
+
 
 fisherman for fish shell plugin manager
   curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
 
-###Prompt
+### Prompt
+brew install starship - its on brew.sh
 
 
 ### TODO

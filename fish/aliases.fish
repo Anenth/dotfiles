@@ -11,13 +11,6 @@ function g        ; git $argv ; end
 function grep     ; command grep --color=auto $argv ; end
 
 
-
-# mv, rm, cp
-alias mv 'command gmv --interactive --verbose'
-alias rm 'command grm --interactive --verbose'
-alias cp 'command gcp --interactive --verbose'
-
-
 alias where=which # sometimes i forget
 alias brwe=brew  #typos
 
@@ -45,13 +38,3 @@ alias ungz="gunzip -k"
 
 # File size
 alias fs="stat -f \"%z bytes\""
-
-# emptytrash written as a function
-
-# Update installed Ruby gems, Homebrew, npm, and their installed packages
-alias brew_update="brew -v update; brew upgrade --force-bottle --cleanup; brew cleanup; brew cask cleanup; brew prune; brew doctor; npm-check -g -u"
-alias update_brew_npm_gem='brew_update; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update --no-rdoc --no-ri'
-
-
-
-alias gcrm 'gco recruiterbox_main ;and ggpur'
