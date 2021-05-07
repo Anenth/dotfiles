@@ -96,3 +96,6 @@ brew install gh
 # Python
 brew install pyenv
 brew install rustup
+
+# AWS
+brew install awscli

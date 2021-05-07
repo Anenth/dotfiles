@@ -52,6 +52,7 @@ brew install --cask fanny
 brew install --cask lunar
 brew install --cask spotify
 brew install --cask insomnia
+brew install --cask kap
 
 brew install --cask lulu
 brew install --cask discord
