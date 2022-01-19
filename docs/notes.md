@@ -5,6 +5,8 @@
 ## Load nodejs on new termial 
 https://github.com/FabioAntunes/fish-nvm
 
+> fisher install FabioAntunes/fish-nvm edc/bass
+
 Create a new file 
 ```bash
 vim /usr/local/bin/node

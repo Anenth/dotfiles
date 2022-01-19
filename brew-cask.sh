@@ -7,22 +7,28 @@
 
 # Install native apps
 
-brew install caskroom/cask/brew-cask
+# brew install caskroom/cask/brew-cask
 # brew tap caskroom/versions
 # Get package names from https://formulae.brew.sh/cask/jetbrains-toolbox#default
 
 # daily
 brew install --cask spectacle
 brew install --cask dropbox
-brew install --cask google-backup-and-sync
 brew install --cask 1password
+brew install --cask bitwarden
 brew install --cask cleanmymac
 brew install --cask slack
+brew install --cask microsoft-teams
 brew install --cask alfred
-brew install --cask boostnote
 brew install --cask notion
 brew install --cask kap
+brew install --cask cron
+
+
+# browsers
 brew install --cask google-chrome
+brew tap homebrew/cask-versions 
+brew install --cask google-chrome-canary
 brew install --cask firefox
 brew install --cask brave-browser
 
@@ -33,7 +39,6 @@ brew install --cask hyper
 brew install --cask sublime-text
 brew install --cask visual-studio-code
 brew install --cask jetbrains-toolbox
-brew install --cask pycharm
 brew install --cask macvim
 brew install --cask imagealpha
 brew install --cask imageoptim

@@ -27,4 +27,4 @@ export WORKON_HOME=~/Envs
 # export CC=gcc
 VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 
-export PATH=$HOME/.homebrew/bin:$HOME/.homebrew/sbin:$PATH
+# export PATH=$HOME/.homebrew/bin:$HOME/.homebrew/sbin:$PATH

@@ -128,8 +128,12 @@ fi
 ### homebrew!
 
 # (if your machine has /usr/local locked down (like google's), you can do this to place everything in ~/.homebrew
-mkdir $HOME/homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C $HOME/homebrew
-export PATH=$HOME/homebrew/bin:$HOME/homebrew/sbin:$PATH
+# mkdir $HOME/homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C $HOME/homebrew
+# export PATH=$HOME/homebrew/bin:$HOME/homebrew/sbin:$PATH
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/anenth/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # maybe you still need an LD_LIBRARY export thing
 
 # install all the things
@@ -165,17 +169,17 @@ npm install --global trash-cli
 
 # install better nanorc config
 # https://github.com/scopatz/nanorc
-curl https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh | sh
+# curl https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh | sh
 
 # github.com/rupa/z   - oh how i love you
-git clone https://github.com/rupa/z.git ~/code/z
+# git clone https://github.com/rupa/z.git ~/code/z
 # consider reusing your current .z file if possible. it's painful to rebuild :)
 # z is hooked up in .bash_profile
 
 
 # github.com/thebitguru/play-button-itunes-patch
 # disable itunes opening on media keys
-git clone https://github.com/thebitguru/play-button-itunes-patch ~/code/play-button-itunes-patch
+# git clone https://github.com/thebitguru/play-button-itunes-patch ~/code/play-button-itunes-patch
 
 
 # my magic photobooth symlink -> dropbox. I love it.

@@ -22,15 +22,14 @@ brew install gnu-sed --default-names
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before running `chsh`.
 brew install bash
 
+brew tap homebrew/homebrew-core
 brew install bash-completion
 
-brew install homebrew/completions/brew-cask-completion
-
 # Install wget with IRI support
-brew install wget --with-iri
+brew install wget
 
 # Install more recent versions of some OS X tools
-brew install vim --with-override-system-vi
+brew install vim 
 brew install neovim
 brew install nano
 brew install grep
@@ -46,7 +45,7 @@ brew install entr
 # Install other useful binaries
 brew install the_silver_searcher
 brew install fzf
-brew install imagemagick --with-webp
+brew install imagemagick
 brew install nvm
 brew install pv
 brew install rename
@@ -56,6 +55,9 @@ brew install ffmpeg --with-libvpx
 brew install gnupg
 brew install exa # Replacement for ls
 brew install git-delta
+brew install gcc
+brew reinstall vips
+
 
 
 brew install terminal-notifier

@@ -28,12 +28,16 @@
 
 ### shell
 1. Install fish shell
-2. Add the shell to /etc/shells with:
-> echo /usr/local/bin/fish | sudo tee -a /etc/shells
-> chsh -s /usr/local/bin/fish
+  > which fish
+2. Lets switch to fish shell! 
+  a) Add the shell to /etc/shells with:
+  > echo /opt/homebrew/bin/fish | sudo tee -a /etc/shells
+  b) Change the shell
+  > chsh -s /opt/homebrew/bin/fish
+  # If you kicked out then do this https://stackoverflow.com/questions/12985304/after-opening-terminal-process-quits-and-cannot-access-terminal-again
 
 
-fisherman for fish shell plugin manager
+# fisherman for fish shell plugin manager
   curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
 
 ### Prompt
@@ -51,6 +55,9 @@ brew install starship - its on brew.sh
   pbcopy < ~/.ssh/id_rsa.pub
   ```
   Paste it here https://github.com/settings/keys
+
+# To add GPG
+https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key
 
 #### Other Apps 
 PixelSnap 2 https://gumroad.com/d/22c168f44d6ff77a4ed3b31b8b6709f3

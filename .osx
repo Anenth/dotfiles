@@ -133,13 +133,6 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 #sudo ln -s /path/to/your/image /System/Library/CoreServices/DefaultDesktop.jpg
 
 ###############################################################################
-# MacBookPro Touch Bar                                                        #
-###############################################################################
-
-# Always display full control strip (ignoring App Controls)
-defaults write com.apple.touchbar.agent PresentationModeGlobal fullControlStrip
-
-###############################################################################
 # SSD-specific tweaks                                                         #
 ###############################################################################
 
