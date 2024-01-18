@@ -7,10 +7,12 @@ SETUVAR Z_DATA_DIR:/Users/anenth/\x2elocal/share/z
 SETUVAR Z_EXCLUDE:\x5e/Users/anenth\x24
 SETUVAR __fish_initialized:3100
 SETUVAR _fisher_FabioAntunes_2F_fish_2D_nvm_files:/Users/anenth/\x2econfig/fish/functions/__nvm_run\x2efish\x1e/Users/anenth/\x2econfig/fish/functions/node\x2efish\x1e/Users/anenth/\x2econfig/fish/functions/npm\x2efish\x1e/Users/anenth/\x2econfig/fish/functions/npx\x2efish\x1e/Users/anenth/\x2econfig/fish/functions/nvm\x2efish\x1e/Users/anenth/\x2econfig/fish/functions/nvm_alias_command\x2efish\x1e/Users/anenth/\x2econfig/fish/functions/nvm_alias_function\x2efish\x1e/Users/anenth/\x2econfig/fish/functions/yarn\x2efish\x1e/Users/anenth/\x2econfig/fish/completions/nvm\x2efish
+SETUVAR _fisher_daenney_2F_pyenv_files:/Users/anenth/\x2econfig/fish/functions/pyenv\x2efish\x1e/Users/anenth/\x2econfig/fish/conf\x2ed/pyenv\x2efish\x1e/Users/anenth/\x2econfig/fish/completions/pyenv\x2efish
 SETUVAR _fisher_edc_2F_bass_files:/Users/anenth/\x2econfig/fish/functions/__bass\x2epy\x1e/Users/anenth/\x2econfig/fish/functions/bass\x2efish
 SETUVAR _fisher_jethrokuan_2F_z_files:/Users/anenth/\x2econfig/fish/functions/__z\x2efish\x1e/Users/anenth/\x2econfig/fish/functions/__z_add\x2efish\x1e/Users/anenth/\x2econfig/fish/functions/__z_clean\x2efish\x1e/Users/anenth/\x2econfig/fish/functions/__z_complete\x2efish\x1e/Users/anenth/\x2econfig/fish/conf\x2ed/z\x2efish
 SETUVAR _fisher_joseluisq_2F_gitnow_files:/Users/anenth/\x2econfig/fish/functions/__gitnow_config_file\x2efish\x1e/Users/anenth/\x2econfig/fish/functions/__gitnow_functions\x2efish\x1e/Users/anenth/\x2econfig/fish/functions/__gitnow_manual\x2efish\x1e/Users/anenth/\x2econfig/fish/conf\x2ed/gitnow\x2efish\x1e/Users/anenth/\x2econfig/fish/conf\x2ed/gitnow_config\x2efish\x1e/Users/anenth/\x2econfig/fish/completions/__gitnow_completions\x2efish
-SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejorgebucaran/bax\x2efish\x1efranciscolourenco/done\x1elaughedelic/pisces\x1eGazorby/fish\x2dabbreviation\x2dtips\x1edaenney/pyenv\x1ejethrokuan/z\x1ejoseluisq/gitnow\x1eFabioAntunes/fish\x2dnvm\x1eedc/bass\x1etakashabe/fish\x2dpeco
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejorgebucaran/bax\x2efish\x1efranciscolourenco/done\x1elaughedelic/pisces\x1eGazorby/fish\x2dabbreviation\x2dtips\x1ejethrokuan/z\x1ejoseluisq/gitnow\x1eFabioAntunes/fish\x2dnvm\x1eedc/bass\x1etakashabe/fish\x2dpeco\x1erbenv/fish\x2drbenv\x1edaenney/pyenv
+SETUVAR _fisher_rbenv_2F_fish_2D_rbenv_files:/Users/anenth/\x2econfig/fish/functions/rbenv\x2efish\x1e/Users/anenth/\x2econfig/fish/conf\x2ed/rbenv\x2efish\x1e/Users/anenth/\x2econfig/fish/completions/rbenv\x2efish
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:005fd7

@@ -24,4 +24,6 @@ chmod +x /usr/local/bin/node
 
 
 ## Install python
-Brew install pyenv, and fisher install daenney/pyenv then pyenv local 3.~ to change the version and use
+1. Brew install pyenv, 
+2. fisher install daenney/pyenv 
+3. pyenv install 3.10.1 & pyenv local 3.10.1 to change the version and use
