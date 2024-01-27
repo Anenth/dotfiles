@@ -7,6 +7,7 @@ fish_vi_key_bindings
 
 source ~/.config/fish/path.fish
 source ~/.config/fish/aliases.fish
+source ~/.config/fish/functions.fish
 
 # Git prompt
 set -g __fish_git_prompt_showdirtystate 'yes'
