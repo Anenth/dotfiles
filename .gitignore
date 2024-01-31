@@ -34,6 +34,7 @@ fish/functions/
 fish/conf.d/
 fish/completions/
 fish/conf.d
+fish/private_aliases.fish
 
 # random
 shilocation

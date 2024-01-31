@@ -1,4 +1,5 @@
 source ~/.config/fish/git-aliases-export.fish
+source ~/.config/fish/private_aliases.fish
 
 # Navigation
 function ..    ; cd .. ; end
@@ -38,3 +39,4 @@ alias ungz="gunzip -k"
 
 # File size
 alias fs="stat -f \"%z bytes\""
+
