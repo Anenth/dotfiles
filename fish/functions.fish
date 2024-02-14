@@ -220,3 +220,32 @@ function convert_svg_to_png --description "Converts all SVG files in a folder to
 
   echo "All SVG files in $svg_folder converted using $converter"
 end
+
+# Create a function to convert heic file to jpg from the current folder to a new folder called "jpg"
+function heic_to_jpg --description "Converts all HEIC files in a folder to JPG files"
+
+  set heic_folder (count $argv) > /dev/null; and set heic_folder $argv[1]; or set heic_folder .
+  set jpg_folder $heic_folder/jpg
+
+  # Create the JPG folder if it doesn't exist
+  if not test -d $jpg_folder
+    mkdir -p $jpg_folder
+  end
+
+  # Loop through each HEIC file in the folder
+  for heic_file in $heic_folder/*.heic *.HEIC
+    # Extract the filename without extension
+    set filename (basename -s .heic (basename -s .HEIC $heic_file))
+    set jpg_filename $jpg_folder/$filename.jpg
+
+    # Convert the HEIC to a JPG file
+    sips -s format jpeg $heic_file --out $jpg_filename
+
+    # Print the filename
+    echo "Converted $filename.heic to $filename.jpg"
+  end
+
+  echo "All HEIC files in $heic_folder converted to JPG in $jpg_folder"
+end
+
+
