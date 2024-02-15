@@ -209,7 +209,7 @@ function convert_svg_to_png --description "Converts all SVG files in a folder to
       case "magick"
         magick convert -background none -resize $size $svg_file $png_filename
       case "inkscape"
-        inkscape -z -e $png_filename -w (string split 'x' $size)[1] -h (string split 'x' $size)[2] $svg_file
+        inkscape --export-type=png --export-filename=$png_filename --export-width=(string split 'x' $size)[1] --export-height=(string split 'x' $size)[2] $svg_file
       case "*"
         echo "Unsupported converter: $converter"
     end
