@@ -182,8 +182,8 @@ end
 function convert_svg_to_png --description "Converts all SVG files in a folder to PNG files with specified size"
 
   set svg_folder (count $argv) > /dev/null; and set svg_folder $argv[1]; or set svg_folder .
-  set size $argv[2] 256x256  # Set default size to 256x256 if not provided
-  set converter $argv[3] inkscape  # Set default converter to magick if not provided
+  set size $argv[2]
+  set converter $argv[3] inkscape  # Set default converter to inkscape if not provided
 
   # Install Converter if not already present
   if not command -sq $converter
@@ -204,6 +204,11 @@ function convert_svg_to_png --description "Converts all SVG files in a folder to
     set filename (basename -s .svg $svg_file)
     set png_filename $svg_folder/$filename.png
 
+    # Get the size from the SVG file if not specified
+    if test -z $size
+      set size (sed -n 's/.*width="\([^"]*\)".*height="\([^"]*\)".*/\1x\2/p' $svg_file)
+    end
+
     # Convert the SVG to a PNG file with the specified size and remove the stroke
     switch $converter
       case "magick"
@@ -215,7 +220,7 @@ function convert_svg_to_png --description "Converts all SVG files in a folder to
     end
 
     # Print the filename
-    echo "Converted $filename.svg to $filename.png with size $size using $converter"
+    echo "Converted $filename.svg to $filename.png using $converter"
   end
 
   echo "All SVG files in $svg_folder converted using $converter"
