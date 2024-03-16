@@ -253,4 +253,26 @@ function heic_to_jpg --description "Converts all HEIC files in a folder to JPG f
   echo "All HEIC files in $heic_folder converted to JPG in $jpg_folder"
 end
 
+# Create a function to resize specific png to a specific size (512x512), the argument will contain the path to the file using image magick
+function resize_png --description "Resize a PNG file to a specific size"
 
+  set png_file (count $argv) > /dev/null; and set png_file $argv[1]; or echo "Please provide the path to the PNG file"
+  set size (count $argv) > /dev/null; and set size $argv[2]; or set size 512x512
+
+  # Get the filename without extension
+  set filename (basename -s .png $png_file)
+  set resized_filename (dirname $png_file)/$filename-$size.png
+
+  echo "$filename $resized_filename $size"
+  # Resize the PNG file to the specified size using magick
+  convert $png_file -resize $size $resized_filename > /dev/null
+
+  # Print the filename
+  echo "Resized $filename.png to $resized_filename"
+
+  if test -f $resized_filename
+    echo "File resized successfully"
+  else
+    echo "Failed to resize the file"
+  end
+end
