@@ -40,3 +40,4 @@ alias ungz="gunzip -k"
 # File size
 alias fs="stat -f \"%z bytes\""
 
+alias ssh-premagic 'ssh 13.228.96.187'
