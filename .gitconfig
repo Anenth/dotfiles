@@ -169,3 +169,5 @@
 	showPatch = true
 [log]
 	date = relative
+[init]
+	defaultBranch = master

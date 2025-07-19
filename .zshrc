@@ -158,3 +158,8 @@ source ~/.bash_profile
 # export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/anenth/.lmstudio/bin"
+# End of LM Studio CLI section
+

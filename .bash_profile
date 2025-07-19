@@ -123,3 +123,7 @@ shopt -s cdspell;
 # source '/Users/Anenth/google-cloud-sdk/completion.bash.inc'
 
 # source '/usr/local/bin/virtualenvwrapper.sh'
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/anenth/.lmstudio/bin"
+# End of LM Studio CLI section
+

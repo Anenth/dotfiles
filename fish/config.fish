@@ -72,7 +72,8 @@ set tide_pwd_max_dirs 1
 starship init fish | source
 
 # For python
-# pyenv init - | source
+# https://github.com/pyenv/pyenv
+pyenv init - | source
 # pnpm
 set -gx PNPM_HOME "/Users/anenth/Library/pnpm"
 set -gx PATH "$PNPM_HOME" $PATH
@@ -80,3 +81,9 @@ set -gx PATH "$PNPM_HOME" $PATH
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
+alias claude="/Users/anenth/.claude/local/claude"
+
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /Users/anenth/.lmstudio/bin
+# End of LM Studio CLI section
+

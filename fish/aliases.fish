@@ -41,3 +41,4 @@ alias ungz="gunzip -k"
 alias fs="stat -f \"%z bytes\""
 
 alias ssh-premagic 'ssh 13.228.96.187'
+alias ssh-pmagic 'ssh pmagic@13.228.96.187 -p 4755'
