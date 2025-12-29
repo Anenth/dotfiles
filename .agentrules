@@ -1,0 +1,138 @@
+# Dotfiles Repository - Agent Rules
+
+## Repository Overview
+This is a macOS dotfiles repository for managing shell configuration, system settings, and development tools. The repository uses symlinks to connect configuration files from this repo to the user's home directory.
+
+## Key Technologies & Tools
+- **Shell**: Fish shell (primary), with vi key bindings enabled
+- **OS**: macOS (Darwin)
+- **Package Manager**: Homebrew (brew.sh, brew-cask.sh)
+- **Plugin Manager**: Fisher (for Fish shell plugins)
+- **Prompt**: Starship
+- **Version Managers**: pyenv, rbenv, nvm
+- **Package Managers**: npm, yarn, pnpm, bun
+- **Editor**: NeoVim (Vim plugins managed by plug)
+
+## Repository Structure
+
+### Core Configuration Files
+- `fish/` - Fish shell configuration directory
+  - `config.fish` - Main Fish shell configuration
+  - `aliases.fish` - Shell aliases
+  - `functions.fish` - Custom Fish functions
+  - `path.fish` - PATH configuration
+  - `functions/` - Individual function files
+  - `conf.d/` - Configuration snippets
+  - `completions/` - Fish completions
+
+### Setup Scripts
+- `setup-a-new-machine.sh` - Initial machine setup (DO NOT run in one go, copy-paste sections)
+- `symlink-setup.sh` - Creates symlinks from repo to home directory
+- `brew.sh` - Homebrew package installation
+- `brew-cask.sh` - Homebrew cask installation
+
+### Other Directories
+- `bin/` - Custom shell scripts and binaries
+- `alfread_workflows/` - Alfred workflow files
+- `cron/` - Cron job scripts
+- `tmux/` - Tmux configuration
+- `prefs/` - Preference files (iTerm colors, etc.)
+
+## Important Conventions
+
+### File Symlinking
+- Files are symlinked from the repository to `~/` (home directory)
+- Fish config is symlinked to `~/.config/fish/`
+- Bin directory is symlinked to `~/bin`
+- The `symlink-setup.sh` script handles this automatically
+- Always check if a file should be symlinked before modifying
+
+### Fish Shell Functions
+- Custom functions are defined in `fish/functions.fish` or individual files in `fish/functions/`
+- Functions follow Fish shell syntax (not bash)
+- Use `function` keyword with `--description` flag
+- Functions should be idempotent and safe to run multiple times
+
+### Path Management
+- PATH modifications go in `fish/path.fish`
+- Use `fish_add_path` for adding paths (Fish 3.2+)
+- Use `set -gx PATH` for environment variables
+- Check for existing paths before adding to avoid duplicates
+
+### Sensitive Information
+- Never commit sensitive data (SSH keys, API keys, passwords)
+- Use `.gitconfig.local` for git credentials (not in repo)
+- Use `.extra` or `.extra.fish` for personal/local configs (not in repo)
+- Check for `.gitignore` patterns before adding new files
+
+## Guidelines for Making Changes
+
+### When Adding New Configuration
+1. **Fish Shell**: Add to appropriate file in `fish/` directory
+2. **Aliases**: Add to `fish/aliases.fish`
+3. **Functions**: Add to `fish/functions.fish` or create new file in `fish/functions/`
+4. **Bin Scripts**: Add to `bin/` directory (ensure executable permissions)
+5. **Path Changes**: Add to `fish/path.fish`
+
+### When Modifying Existing Files
+1. **Test changes**: Fish shell changes take effect immediately in current session
+2. **Check symlinks**: Verify files are properly symlinked before editing
+3. **Preserve structure**: Maintain existing organization and patterns
+4. **Document**: Add comments for complex configurations
+
+### Shell Script Guidelines
+- Use Fish shell syntax for files in `fish/` directory
+- Use bash for setup scripts (`setup-a-new-machine.sh`, `symlink-setup.sh`)
+- Make scripts idempotent when possible
+- Include error handling and user prompts for destructive operations
+
+### Environment-Specific Configuration
+- User-specific configs: `~/.extra` or `~/.extra.fish` (not in repo)
+- Machine-specific: Consider using environment variables or conditional logic
+- Paths: Use `$HOME` instead of hardcoded `/Users/anenth` when possible
+
+## Common Patterns
+
+### Fish Shell Function Pattern
+```fish
+function function_name --description 'Description of what it does'
+  # function body
+end
+```
+
+### Path Addition Pattern
+```fish
+# Modern (Fish 3.2+)
+fish_add_path /path/to/add
+
+# Legacy
+set -gx PATH /path/to/add $PATH
+```
+
+### Conditional Configuration
+```fish
+if test -d "/path/to/check"
+  # configuration
+end
+```
+
+## Testing Changes
+1. Source the file: `source ~/.config/fish/config.fish` (or specific file)
+2. Test in new shell session
+3. Verify symlinks are correct: `ls -la ~/.config/fish`
+4. Check for syntax errors: `fish -n ~/.config/fish/config.fish`
+
+## Important Notes
+- The `setup-a-new-machine.sh` script should NOT be run in one go - it's meant to be copy-pasted section by section
+- Fish shell uses different syntax than bash (no `export`, uses `set -gx` instead)
+- Vi key bindings are enabled in Fish shell
+- Starship prompt is initialized in `config.fish`
+- Multiple version managers are configured (pyenv, rbenv, nvm) - be careful with PATH ordering
+
+## When in Doubt
+- Check existing patterns in similar files
+- Test changes in a new shell session
+- Verify symlinks are working correctly
+- Consult Fish shell documentation for syntax questions
+- Preserve user's personal preferences and existing functionality
+

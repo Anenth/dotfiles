@@ -87,3 +87,8 @@ alias claude="/Users/anenth/.claude/local/claude"
 set -gx PATH $PATH /Users/anenth/.lmstudio/bin
 # End of LM Studio CLI section
 
+
+export PATH="$PATH:$HOME/.local/bin"
+set -x NODE_OPTIONS "--max-old-space-size=6144"
+# Added by Antigravity
+fish_add_path /Users/anenth/.antigravity/antigravity/bin

@@ -1,6 +1,7 @@
 #SHELL
 - Fish shell
 - Fisher for plugin managment
+- Starship for termial prompt 
 
 #VIM
 - NeoVim 

@@ -163,3 +163,5 @@ source ~/.bash_profile
 export PATH="$PATH:/Users/anenth/.lmstudio/bin"
 # End of LM Studio CLI section
 
+
+export PATH="$PATH:$HOME/.local/bin"

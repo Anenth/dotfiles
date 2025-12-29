@@ -11,3 +11,6 @@ export NVM_DIR="/opt/homebrew/opt/nvm"
 export PATH="$PATH:/Users/anenth/.lmstudio/bin"
 # End of LM Studio CLI section
 
+export GEMINI_API_KEY="AIzaSyBQHm9ansrtEWmHGprESgVL-MxTACIY5EY"
+
+export PATH="$PATH:$HOME/.local/bin"
